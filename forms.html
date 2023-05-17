@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+</head>
+
+<body>
+    <div>Forms</div>
+    <div>
+        <form action="index.html">
+            <table border="1">
+                <tr>
+                    <td>
+                        <div>
+                            <input type="radio" name="fruits" id="apple" value="apple">
+                            <label for="apple">사과</label>
+                            <input type="radio" name="fruits" id="banana" value="banana" checked>
+                            <label for="banana">바나나</label>
+                            <input type="radio" name="fruits" id="strawberry" value="strawberry">
+                            <label for="strawberry">딸기</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <label for="cars">좋아하는 자동차:</label>
+                <select name="cars" id="cars">
+                    <option value="ramborgini">람보르기니</option>
+                    <option value="bugati">부가티</option>
+                    <option value selected="marselati">마세라티</option>
+                    <option value="perari">페라리</option>
+                </select>
+                <div>
+                    <div>
+                        <label for="cars">좋아하는 자동차(multiple):</label>
+                        <select name="cars" id="cars" multiple>
+                            <option value="ramborgini">람보르기니</option>
+                            <option value="bugati">부가티</option>
+                            <option value selected="marselati">마세라티</option>
+                            <option value="perari">페라리</option>
+                        </select>
+                        <div>
+                            <button type="submit">click</button>
+                            <button type="reset">reset</button>
+                        </div>
+                    </div>
+                    <form action="../index.html">
+                        <div>
+                            <input type="email" name="myemail" id="idemail">
+                            <label for="idemail">Email address</label>
+                        </div>
+                        <div>
+                            <input type="password" name="mypassword" id="idpassword">
+                            <label for="idpassword">Password</label>
+                        </div>
+                        <button type="submit">click</button>
+                        <button type="reset">reset</button>
+                    </form>
+</body>
+
+</html>
